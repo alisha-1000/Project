@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+/* @font-face{
+    font-family: myFont;
+    src:url(MM1.ttf);
+} */
+#logo {
+    font-size: 24px;         
+    font-weight: bold;       
+    color:white;            
+    text-transform: uppercase;
+    margin-bottom: 50px; 
+    align-items: center;
+    padding:80px;
+}
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color:gray;
+    color: white;
+    width: 100%;
+ 
+} */
+.navbar {
+    display: flex;
+    height:120px;
+    width:100%;
+    /* justify-content: center; 
+    align-items: center;  */
+    justify-content: space-between;
+    /* padding:50px; */
+    gap: 50px; 
+    padding: 50px 50px;
+    background-color:black;
+    color: white;
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:20px 0px;
+    padding:30px;
+    font-size:20px;
+
+}
+#divider{
+    height:1px;
+    background-color:white;
+    width:1504px;
+    align-items:left;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size:75px;
+}
+
+/* .header h1 {
+    font-size: 2.5em;
+    margin: 0;
+} */
+.project-header img{
+    width:100%;
+    margin:auto;
+    border-radius: 10%;
+    padding:10px 10px;
+    border:5px solid#111;
+
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project p {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: #222;
+}
+.footer p{
+    font-weight: bold;
+    padding-bottom: 32px;;
+}
+
+.footer .subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer .subscribe-form input {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer .subscribe-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(164, 106, 164);
+    color: #fff;
+}
+
+.footer .socials a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer.socials a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+}
+
+
