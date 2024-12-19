@@ -18,7 +18,7 @@ header {
 } 
 
 
-header .logo img {
+header.logo img {
     height: 50px; 
 }
 
@@ -33,6 +33,7 @@ nav ul {
 
 nav ul li {
     margin-left: 20px; 
+    font-size:1.5rem;
 }
 
 
@@ -75,23 +76,26 @@ nav ul li img {
     font-size: 1em;
 }
 
-.container {
+/* .container {
     width: 100%;
-    
-    margin: 0 auto;
     padding: 20px;
-    color:white;
-}
+    color: white;
+} */
 
 .contact {
     display: flex;
     justify-content: space-between; 
     padding: 40px;
     background-color: black;
-    color:white;
-    
+    color: white;
     border-radius: 8px;
-    
+    border-bottom: 2px solid #000;  
+    overflow: hidden; 
+    margin-left: 0;
+    padding-left: 0;  
+    width: 100%;
+    padding: 20px;
+    color: white;
 }
 
 @keyframes slideLeft {
@@ -99,57 +103,53 @@ nav ul li img {
         transform: translateX(100%);
     }
     100% {
-        transform: translateX(-100%); 
+        transform: translateX(-100%);
     }
 }
-
 
 .contact h2 {
     display: inline-block; 
     animation: slideLeft 10s linear infinite; 
-    white-space: nowrap;
-    padding-bottom: 10px; 
+    white-space: nowrap; 
+    width: 100%;
 }
-
 
 .contact p {
     display: inline-block;
     animation: slideLeft 10s linear infinite;
     white-space: nowrap;
-    padding-bottom: 20px; 
-    text-decoration:wavy; 
+    padding-bottom: 0; 
+    text-decoration: wavy;
 }
 
 .contact {
-    position: relative;
-    border-bottom: 2px solid #000;  
-    padding-bottom: 20px; 
-    overflow: hidden; 
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+    overflow: hidden;
 }
-
 
 .spacer {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     width: 100%;
-    color:white;
+    color: white;
 }
 
 .spacer h2 {
     font-size: 32px;
-    color:black;
+    color: black;
     margin-bottom: 0;
-    color:white;
-    width:100%;
+    color: white;
+    width: 100%;
 }
 
 .spacer p {
     font-size: 18px;
     color: black;
     line-height: 1.6;
-    margin-left: 20px;
-    color:white;
-    width:100%;
+    margin-left: 0;
+    color: white;
+    width: 100%;
 }
 .layout{
     text-align: center;
@@ -187,7 +187,15 @@ nav ul li img {
     background-color:rgb(130, 125, 190);
     width:120px;
     color: black;
+    font-size:16px;
+    cursor:pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
 } 
+.layout .subscribe-form button:hover {
+    background-color: rgb(79, 75, 128); 
+    transform: scale(1.1); 
+    color: white; 
+}
 .layout .socials {
     display: flex; 
     justify-content: center;
@@ -252,7 +260,7 @@ footer .right .contact-btn:hover {
     background-color: #333;
     border-color: #444;
 }
-/* For laptops (1024px and above) */
+
 @media (min-width: 1024px) {
     header {
         padding: 15px 30px;
@@ -280,7 +288,7 @@ footer .right .contact-btn:hover {
     }
 }
 
-/* For tablets (768px to 1023px) */
+
 @media (min-width: 768px) and (max-width: 1023px) {
     header {
         flex-direction: column;
@@ -320,7 +328,7 @@ footer .right .contact-btn:hover {
     }
 }
 
-/* For mobile devices (767px and below) */
+
 @media (max-width: 767px) {
     header {
         flex-direction: column;
