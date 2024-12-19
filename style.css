@@ -73,14 +73,9 @@ nav ul li img {
 
 .project p {
     margin: 10px 0 0;
-    font-size: 1em;
+    font-size: 1.5rem;
 }
 
-/* .container {
-    width: 100%;
-    padding: 20px;
-    color: white;
-} */
 
 .contact {
     display: flex;
