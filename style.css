@@ -72,7 +72,7 @@ nav ul li img {
 }
 
 .project p {
-    margin: 10px 0 0;
+    margin: 10px;
     font-size: 1.5rem;
 }
 
@@ -93,14 +93,6 @@ nav ul li img {
     color: white;
 }
 
-@keyframes slideLeft {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 .contact h2 {
     display: inline-block; 
@@ -109,12 +101,21 @@ nav ul li img {
     width: 100%;
 }
 
+
 .contact p {
     display: inline-block;
     animation: slideLeft 10s linear infinite;
     white-space: nowrap;
     padding-bottom: 0; 
     text-decoration: wavy;
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .contact {
