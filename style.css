@@ -218,7 +218,6 @@ nav ul li img {
 } 
 
 footer {
-    /* position: relative;  */
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -234,7 +233,6 @@ footer .left {
 
 
 footer .right {
-    /* position: absolute;  */
     right: 0; 
     top: 50%; 
     transform: translateY(-50%); 
